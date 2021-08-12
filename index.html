@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <title>Content</title>
+  <title>笔记</title>
   <link rel="icon" href="_media/favicon.ico"/>
   <meta name="google-site-verification" content="6t0LoIeFksrjF4c9sqUEsVXiQNxLp2hgoqo0KryT-sE"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta name="keywords" content="doc,docs,documentation,gitbook,creator,generator,github,jekyll,github-pages"/>
   <meta name="description" content="A magical documentation generator."/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <link rel="stylesheet" href="css/theme-defaults.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
 
   <style>
     nav.app-nav li ul {
-      min-width: 100px;
+      min-width: 130px;
     }
   </style>
 </head>
 
-<body>
+<body style="background-color: #c9eecd">
 <div id="app">Loading ...</div>
 <script src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1/index.js"></script>
 <script>
@@ -32,12 +32,12 @@
   
   // Docsify configuration
   window.$docsify = {
+    el: '#app',
     alias: {
       '.*?/awesome':
         'https://raw.githubusercontent.com/docsifyjs/awesome-docsify/master/README.md',
       '.*?/changelog':
         'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG.md',
-      '/.*/_navbar.md': '/_navbar.md',
       '/es/(.*)':
         'https://raw.githubusercontent.com/docsifyjs/docs-es/master/$1',
       '/de-de/(.*)':
@@ -51,11 +51,13 @@
     executeScript: true,
     loadSidebar: true,
     loadNavbar: true,
+    coverpage: true,
     mergeNavbar: true,
+    navbar: true,
     maxLevel: 2,
     subMaxLevel: 2,
     ga: 'UA-106147152-1',
-    name: 'content',
+    name: '健康工作五十年✊',
     search: {
       noData: {
         '/es/': '¡No hay resultados!',
