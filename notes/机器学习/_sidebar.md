@@ -4,3 +4,5 @@
 * [CNN Demo](notes/机器学习/CNN_Demo.md)
 * [Pytorch基础](notes/机器学习/Pytorch.md)
 * [Pytorch数据增强](notes/机器学习/torchvision.transforms.md)
+* [标签传播算法](notes/机器学习/标签传播算法.md)
+
